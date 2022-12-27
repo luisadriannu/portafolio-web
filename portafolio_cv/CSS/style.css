@@ -434,7 +434,7 @@ progress::-webkit-progress-value {
 .avatar {
   border-radius: 0.5rem;
   width: 90%;
-  height: 40vh;
+  height: 30vh;
 }
 .bg-gray-light {
   background-color: var(--gray-light-color);
@@ -629,6 +629,10 @@ progress::-webkit-progress-value {
   background-color: var(--white-color);
 }
 
+.portfolio-modal img {
+  width: 100%;
+  height: 80vw;
+}
 .portfolio-modal h3 {
   border-bottom: medium solid var(--first-color);
   margin: 1rem auto;
@@ -720,7 +724,7 @@ progress::-webkit-progress-value {
 
   .avatar {
     width: 60%;
-    height: 60vh;
+    height: 55vh;
   }
 
   .contact-cards {

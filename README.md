@@ -1,7 +1,5 @@
-#
-
 # PORTAFOLIO CV
 
 Repositorio de mi portafolio web
 
-- [Landing page de tipo Portafolio-CV]{}
+- [Link a mi portafolio](https://luisadriannu.github.io/portafolio-web/portafolio_cv)
