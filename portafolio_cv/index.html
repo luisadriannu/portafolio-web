@@ -4,9 +4,10 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="CSS/style.css"/>
     <title>Portafolio CV - LuizackJS</title>
-    <link rel="icon" href="assets/avatar-luizack-circle.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="icon" href="assets/Avatar_icon.png"/>
     <meta
       name="description"
       content="Hola bienvenidos a mi Portafolio Profesional, soy Luis Adrian Desarrollador web"
@@ -14,7 +15,7 @@
     <meta name="canonical" href="https://luisadriannu.github.io/portafolio-web/portafolio_cv"/>
     <link rel="favicon" href="https://luisadriannu.github.io/portafolio-web/portafolio_cv/assets/avatar-luizack-circle.png" />
     <link rel="apple-touch-icon" href="https://luisadriannu.github.io/portafolio-web/portafolio_cv/assets/avatar-luizack-circle.png" />
-    <meta name="theme-color" content="#D90062"/>
+    <meta name="theme-color" content="#d66800"/>
     <meta name="twitter:card" content="summary"/>
     <meta property="og:type" content="website"/>
     <meta
@@ -34,58 +35,76 @@
       content="Hola bienvenidos a mi Portafolio Profesional, soy Luis Adrian Desarrollador web"
     />
   </head>
-  <body>
-    <header class="header">
+  <body class="light-mode">
+    <header class="header none">
       <section class="container">
         <div class="logo">
-          <img src="assets/avatar-luizack-circle.png" alt="Luzack Avatar" />
+          <img src="assets/Avatar_icon.png" alt="Luizack Avatar" />
           <a href="index.html">LuizackJS</a>
         </div>
-        <button class="menu-btn">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
-          </svg>
-
-          <svg
-            class="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
-            />
-          </svg>
-        </button>
-        <nav class="menu">
-          <a href="#inicio">Inicio</a>
-          <a href="#acerca">Acerca</a>
-          <a href="#servicios">Servicios</a>
-          <a href="#portafolio">Proyectos</a>
-          <a href="#testimonios">Galería</a>
-          <a href="#contacto">Contacto</a>
-        </nav>
+            <button class="menu-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+              </svg>
+  
+              <svg
+                class="none"
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"
+                />
+              </svg>
+            </button>
+     
+          </div>
+          <nav class="menu">
+            <!-- <a class="options" href="#inicio">Inicio</a> -->
+            <a class="options" href="#acerca">Acerca</a>
+            <a class="options" href="#servicios">Servicios</a>
+            <a class="options" href="#portafolio">Proyectos</a>
+            <a class="options" href="#contacto">Contacto</a>
+          </nav>
+          
       </section>
     </header>
+
+        <button class="btn-dark-mode none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"  class="bi bi-lightbulb-off-fill" viewBox="0 0 16 16">
+             <path d="M2 6c0-.572.08-1.125.23-1.65l8.558 8.559A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm10.303 4.181L3.818 1.697a6 6 0 0 1 8.484 8.484zM5 14.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5zM2.354 1.646a.5.5 0 1 0-.708.708l12 12a.5.5 0 0 0 .708-.708l-12-12z"/>
+           </svg>
+              <svg 
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16"  fill="white" class="bi bi-lightbulb-fill none" viewBox="0 0 16 16">
+                <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+        </button>
+        <button class="btn-scroll-top none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+          </svg>
+        </button>
+    
     <section id="inicio" class="home">
       <article
-        class="hero-image"
-        style="
-          --hero-image: url('../assets/hero-image-port-4.jpg');
+      class="hero-image"
+      style="
+          --hero-image: url('../assets/hero-image-home.jpg');
           --hero-attachment: fixed;
-        "
+          "
       >
-        <aside
-          class="hero-image-opacity"
-          style="--hero-opacity-color: var(--black-alpha-color)"
-        >
-          <div class="hero-image-content">
+      <aside
+      class="hero-image-opacity"
+      style="--hero-opacity-color: var(--black-alpha-color)">
+      <div class="hero-image-content">
             <h2
               class="hero-image-title"
               style="--hero-text-color: var(--white-color)"
@@ -94,8 +113,11 @@
               a mi sitio
             </h2>
             <a href="#contacto" class="btn">CONTÁCTAME</a>
-          </div>
-        </aside>
+            <div class="indicador">
+             
+            </div>
+        </div>
+            </aside>
       </article>
     </section>
     <section
@@ -124,6 +146,7 @@
       </article>
       <article>
         <img class="photo" src="assets/luizack.jpg" alt="LuizackJS" />
+        
       </article>
 
       <article>
@@ -184,7 +207,8 @@
            <p>Colaborar en los diversos proyectos que se me permitan, implementando mis conocimientos y estrategias adquiridos a lo largo de mi desarrollo profesional.</p>
         </article>
     </section>
-    <section id="servicios" class="services section bg-gray-light">
+
+    <section id="servicios" class="services section">
       <div class="container full-lg-screen">
         <h2 class="section-title">¿Qué te ofrezco?</h2>
         <article class="service-card">
@@ -273,11 +297,12 @@
         </article>
       </div>
     </section>
+
     <section id="portafolio" class="portfolio section">
       <div class="container">
         <h2 class="section-title">Mis Proyectos</h2>
         <a href="#trabajo-1" class="portfolio-card">
-          <img src="assets/proyecto-liga-pc-2.jpg" alt="Proyecto 1" />
+          <img src="assets/portfolio-1.jpg" alt="Proyecto 1" />
           <aside class="portfolio-card-info">
             <div>
               <h3>Liga Deportiva Huetamo</h3>
@@ -290,7 +315,7 @@
           </aside>
         </a>
         <a href="#trabajo-2" class="portfolio-card">
-          <img src="assets/calculadora-program-pc.jpg" alt="Proyecto 2" />
+          <img src="assets/portfolio-2.jpg" alt="Proyecto 2" />
           <aside class="portfolio-card-info">
             <div>
               <h3>Calculadora</h3>
@@ -299,13 +324,35 @@
           </aside>
         </a>
         <a href="#trabajo-3" class="portfolio-card">
-          <img src="assets/proyecto-gesco-pc.jpg" alt="Proyecto 3" />
+          <img src="assets/portfolio-3.jpg" alt="Proyecto 3" />
           <aside class="portfolio-card-info">
             <div>
               <h3>GESCO</h3>
               <p>
                 Para este proyecto se utilizaron las herramientas <i>Angular, TypeScript, JAVA, Bootstrap y Figma</i>. Me encargue del diseño UI UX del proyecto, prototipo y asi como también la
                 programacion <i>frontend</i> del mismo.
+              </p>
+            </div>
+          </aside>
+        </a>
+        <a href="#trabajo-4" class="portfolio-card">
+          <img src="assets/portfolio-4.jpg" alt="Proyecto 4" />
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>Gelish Nail's Nani</h3>
+              <p>
+                Para este proyecto se utilizaron las herramientas <i>HTML, CSS</i> y <i>JAVASCRIPT</i>. Me encargue de realizar el diseño en la herramienta de generación de prototipos <i>Figma</i>. Este sitio fue alojado en un hosting gratuito utilizando <i>Firebase</i>.
+              </p>
+            </div>
+          </aside>
+        </a>
+        <a href="#trabajo-5" class="portfolio-card">
+          <img src="assets/portfolio-5.jpg" alt="Proyecto 5" />
+          <aside class="portfolio-card-info">
+            <div>
+              <h3>JECAL</h3>
+              <p>
+                Para este proyecto se utilizaron las herramientas <i>HTML, CSS</i> y el framework <i>BOOTSTRAP</i>. Me encargue del diseño y programacion del mismo, asi como tambien se implementarion buenas practicas, SEO y WPO. Este sitio se alojo en <i>Hostinger</i>.  
               </p>
             </div>
           </aside>
@@ -327,7 +374,7 @@
           </svg>
         </a>
         <article class="portfolio-modal">
-          <img src="assets/proyecto-liga-pc.jpg" alt="Proyecto 1" />
+          <img src="assets/portfolio-3.jpg" alt="Proyecto 1"  />
           <div class="portfolio-info">
             <h3>LIGA DEPORTIVA HUETAMO</h3>
             <p>
@@ -368,8 +415,8 @@
             />
           </svg>
         </a>
-        <article class="portfolio-modal">
-          <img src="assets/proyecto-calculadora-pc-2.jpg" alt="Proyecto 2" />
+        <article class="portfolio-modal" >
+          <img src="assets/portfolio-5.jpg" alt="Proyecto 2" />
           <div class="portfolio-info">
             <h3>CALCULADORA</h3>
             <p>
@@ -411,7 +458,7 @@
           </svg>
         </a>
         <article class="portfolio-modal">
-          <img src="assets/hero-image-port.jpg" alt="Proyecto 3" />
+          <img src="assets/portfolio-6.jpg" alt="Proyecto 3" />
           <div class="portfolio-info">
             <h3>GESCO (Gestor de Correspondencia)</h3>
             <p>
@@ -457,25 +504,25 @@
           </svg>
         </a>
         <article class="portfolio-modal">
-          <img src="assets/portfolio-4.jpg" alt="Proyecto 4" />
+          <img src="assets/portfolio-1.jpg" alt="Proyecto 4" />
           <div class="portfolio-info">
             <h3>Gelish Nail's Nani</h3>
             <p>
-              Gelish Nail's Nani es un salon de belleza, la cual se dedica a
-              colocar uñas de acrílico y realizar peinados ubicada en Ciudad
+              Gelish Nail's Nani es un salón de belleza, la cual se dedica a
+              colocar uñas de acrílico y realizar peinados para eventos y ocasiones especiales, ubicada en Ciudad
               Altamirano Guerrero municipio de Pungarabato.
             </p>
             <aside class="portfolio-details">
               <small><b>CLIENTE</b></small>
-              <small>Nombre del cliente</small>
+              <small>Felicia Jaramillo</small>
               <small><b>FECHA</b></small>
-              <small>00/00/2023</small>
+              <small>10/01/2023</small>
               <small><b>TIPO</b></small>
               <small>Desarrollo web</small>
               <small><b>ENLACE</b></small>
               <small
-                ><a href="#" target="_blank" rel="noopener"
-                  >Proximamente...</a
+                ><a href="https://gelish-nails-nani.web.app/" target="_blank" rel="noopener"
+                  >Enlace al proyecto</a
                 ></small
               >
             </aside>
@@ -500,115 +547,39 @@
         <article class="portfolio-modal">
           <img src="assets/portfolio-5.jpg" alt="Proyecto 5" />
           <div class="portfolio-info">
-            <h3>NOMBRE DEL PROYECTO 5</h3>
+            <h3>JECAL</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
-              totam, libero saepe, voluptatibus perferendis voluptate reiciendis
-              autem voluptates incidunt rem dicta modi molestiae harum ut
-              consequuntur unde aspernatur mollitia doloribus.
+               <b>JECAL</b> es una empresa dedicada a ofertar ensayo de aptitud, comparaciones Interlaboratorios y capacitaciones. Para el diseño de este proyecto a petición del cliente fue inspirado en la página de proveedor de ensayos, la cual es SENA. 
             </p>
             <aside class="portfolio-details">
               <small><b>CLIENTE</b></small>
               <small>Nombre del cliente</small>
               <small><b>FECHA</b></small>
-              <small>06/12/2022</small>
+              <small>28/02/2023</small>
               <small><b>TIPO</b></small>
-              <small>Tipo de proyecto</small>
+              <small>Desarrollo web</small>
               <small><b>ENLACE</b></small>
               <small
-                ><a href="https://proyecto.com" target="_blank" rel="noopener"
-                  >https://proyecto.com</a
-                ></small
+                >
+                Proximamente...
+                <!-- <a href="https://proyecto.com" target="_blank" rel="noopener"></a> -->
+                </small
               >
             </aside>
           </div>
         </article>
       </div>
     </article>
-    
-    <section class="testimonials" id="testimonios">
-      <article
-        class="hero-image"
-        style="
-          --hero-image: url('../assets/walpy1.jpg');
-          --hero-attachment: scroll;
-        "
-      >
-        <aside
-          class="hero-image-opacity"
-        
-        >
-          <div class="hero-image-content">
-            <div class="container">
-              <h2 class="title-gallery">Galería:</h2>
-              <article
-                class="carousel"
-                style="--carousel-bg-color: var(--white-alpha-color)"
-              >
-                <input type="radio" name="slides" id="slide-1" checked />
-                <input type="radio" name="slides" id="slide-2" />
-                <input type="radio" name="slides" id="slide-3" />
-                <input type="radio" name="slides" id="slide-4" />
-                <ul class="slides">
-                  <li class="slide">
-                    <img
-                      class="avatar"
-                      src="assets/calculator.png"
-                      alt="Cliente 1"
-                    />
-                    <div class="text-gallery">
-                      <blockquote>
-                        Vista general del proyecto.
-                      </blockquote>
-                    </div>
-                    <h3 class="text-first-color">CALCULADORA</h3>
-                  </li>
-                  <li class="slide">
-                    <img
-                      class="avatar"
-                      src="assets/LDH.png"
-                      alt="Cliente 2"
-                    />
-                    <blockquote>
-                      Ventana inicio del proyecto.
-                    </blockquote>
-                    <h3 class="text-first-color">LIGA DEPORTIVA HUETAMO</h3>
-                  </li>
-                  <li class="slide">
-                    <img
-                      class="avatar"
-                      src="assets/GESCO.png"
-                      alt="Cliente 1"
-                    />
-                   <blockquote>
-                     Vista del usuario administrador del proyecto.
-                    </blockquote>
-                    <h3 class="text-first-color">GESTOR DE CORRESPONDENCIA</h3>
-                  </li>
-                  <li class="slide">
-                    <img
-                      class="avatar"
-                      src="assets/proyecto-gesco.png"
-                      alt="Cliente 2"
-                    />
-                   <blockquote>
-                      Vista del login del proyecto.
-                    </blockquote>
-                    <h3 class="text-first-color">GESTOR DE CORRESPONDENCIA</h3>
-                  </li>
-                </ul>
-                <aside class="slides-nav">
-                  <label for="slide-1" id="dot-1"></label>
-                  <label for="slide-2" id="dot-2"></label>
-                  <label for="slide-3" id="dot-3"></label>
-                  <label for="slide-4" id="dot-4"></label>
-                </aside>
-              </article>
-            </div>
-          </div>
-        </aside>
-      </article>
+
+        <section class="section text-center modal-pictures box-shadow none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pin-angle-fill" viewBox="0 0 16 16">
+        <path d="M9.828.722a.5.5 0 0 1 .354.146l4.95 4.95a.5.5 0 0 1 0 .707c-.48.48-1.072.588-1.503.588-.177 0-.335-.018-.46-.039l-3.134 3.134a5.927 5.927 0 0 1 .16 1.013c.046.702-.032 1.687-.72 2.375a.5.5 0 0 1-.707 0l-2.829-2.828-3.182 3.182c-.195.195-1.219.902-1.414.707-.195-.195.512-1.22.707-1.414l3.182-3.182-2.828-2.829a.5.5 0 0 1 0-.707c.688-.688 1.673-.767 2.375-.72a5.922 5.922 0 0 1 1.013.16l3.134-3.133a2.772 2.772 0 0 1-.04-.461c0-.43.108-1.022.589-1.503a.5.5 0 0 1 .353-.146z"/>
+      </svg>
+        <h4>¿Te interesa ver algunas imagenes de mis proyectos?</h4>
+        <small>Pulsa en el siguiente enlace para verlas.. <br> <a href="carrusel.html" target="_blank">Enlace</a></small> 
     </section>
+
+
     <section id="contacto" class="contact section">
       <div class="container">
         <h2 class="section-title">¿Interesado?</h2>
@@ -623,7 +594,7 @@
             >
               <path
                 d="M18.5 7.3125L7 16.8125V27C7 27.5625 7.4375 28 8 28H15C15.5 28 15.9375 27.5625 15.9375 27V21C15.9375 20.5 16.4375 20 16.9375 20H20.9375C21.5 20 21.9375 20.5 21.9375 21V27C21.9375 27.5625 22.4375 28 22.9375 28H30C30.5 28 31 27.5625 31 27V16.75L19.4375 7.3125C19.3125 7.1875 19.125 7.125 19 7.125C18.8125 7.125 18.625 7.1875 18.5 7.3125ZM36.6875 13.75L31.5 9.4375V0.8125C31.5 0.375 31.125 0.0625 30.75 0.0625H27.25C26.8125 0.0625 26.5 0.375 26.5 0.8125V5.3125L20.875 0.6875C20.375 0.3125 19.6875 0.0625 19 0.0625C18.25 0.0625 17.5625 0.3125 17.0625 0.6875L1.25 13.75C1.0625 13.875 0.9375 14.125 0.9375 14.3125C0.9375 14.5 1.0625 14.6875 1.125 14.8125L2.75 16.75C2.875 16.9375 3.0625 17 3.3125 17C3.5 17 3.6875 16.9375 3.8125 16.8125L18.5 4.75C18.625 4.625 18.8125 4.5625 19 4.5625C19.125 4.5625 19.3125 4.625 19.4375 4.75L34.125 16.8125C34.25 16.9375 34.4375 17 34.625 17C34.875 17 35.0625 16.9375 35.1875 16.75L36.8125 14.8125C36.9375 14.6875 37 14.5 37 14.3125C37 14.125 36.875 13.875 36.6875 13.75Z"
-                fill="#D90062"
+                fill="#d66800"
               />
             </svg>
             <h5>UBICACIÓN</h5>
@@ -639,7 +610,7 @@
             >
               <path
                 d="M31.8125 1.5625L25.3125 0.0625C24.625 -0.125 23.875 0.25 23.5625 0.9375L20.5625 7.9375C20.3125 8.5625 20.5 9.25 21 9.6875L24.8125 12.8125C22.5625 17.5625 18.625 21.5625 13.75 23.875L10.625 20.0625C10.1875 19.5625 9.5 19.375 8.875 19.625L1.875 22.625C1.1875 22.9375 0.875 23.6875 1 24.375L2.5 30.875C2.6875 31.5625 3.25 32 4 32C20 32 33 19.0625 33 3C33 2.3125 32.5 1.75 31.8125 1.5625Z"
-                fill="#D90062"
+                fill="#d66800"
               />
             </svg>
 
@@ -660,57 +631,53 @@
             <h5>MIS REDES SOCIALES</h5>
             <small class="social-media">
               <a
+              
                 href="https://github.com/luisadriannu"
                 rel="noopener"
                 target="_blank"
+                
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M12.026,2c-5.509,0-9.974,4.465-9.974,9.974c0,4.406,2.857,8.145,6.821,9.465	c0.499,0.09,0.679-0.217,0.679-0.481c0-0.237-0.008-0.865-0.011-1.696c-2.775,0.602-3.361-1.338-3.361-1.338	c-0.452-1.152-1.107-1.459-1.107-1.459c-0.905-0.619,0.069-0.605,0.069-0.605c1.002,0.07,1.527,1.028,1.527,1.028	c0.89,1.524,2.336,1.084,2.902,0.829c0.091-0.645,0.351-1.085,0.635-1.334c-2.214-0.251-4.542-1.107-4.542-4.93	c0-1.087,0.389-1.979,1.024-2.675c-0.101-0.253-0.446-1.268,0.099-2.64c0,0,0.837-0.269,2.742,1.021	c0.798-0.221,1.649-0.332,2.496-0.336c0.849,0.004,1.701,0.115,2.496,0.336c1.906-1.291,2.742-1.021,2.742-1.021	c0.545,1.372,0.203,2.387,0.099,2.64c0.64,0.696,1.024,1.587,1.024,2.675c0,3.833-2.33,4.675-4.552,4.922	c0.355,0.308,0.675,0.916,0.675,1.846c0,1.334-0.012,2.41-0.012,2.737c0,0.267,0.178,0.577,0.687,0.479	C19.146,20.115,22,16.379,22,11.974C22,6.465,17.535,2,12.026,2z"
-                  />
-                </svg>
+              <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M75 140C108.137 140 135 113.137 135 80C135 46.8629 108.137 20 75 20C41.8629 20 15 46.8629 15 80C15 113.137 41.8629 140 75 140Z" fill="white"/>
+              <path d="M75.0005 10C39.1064 10 10 39.1011 10 75.0005C10 103.719 28.6246 128.084 54.4513 136.679C57.6999 137.281 58.8925 135.269 58.8925 133.552C58.8925 132.002 58.8322 126.882 58.8042 121.451C40.721 125.383 36.9052 113.781 36.9052 113.781C33.9484 106.268 29.6881 104.271 29.6881 104.271C23.7906 100.236 30.1326 100.319 30.1326 100.319C36.6598 100.778 40.0967 107.018 40.0967 107.018C45.8941 116.955 55.3028 114.082 59.012 112.421C59.5954 108.22 61.2799 105.352 63.1388 103.729C48.7013 102.086 33.5243 96.512 33.5243 71.6056C33.5243 64.509 36.0635 58.7106 40.2216 54.1586C39.5467 52.5214 37.3218 45.9102 40.8513 36.9569C40.8513 36.9569 46.3096 35.2099 58.731 43.6197C63.916 42.1795 69.4765 41.4573 75.0005 41.4325C80.5245 41.4573 86.0894 42.1795 91.284 43.6197C103.69 35.2099 109.141 36.9569 109.141 36.9569C112.679 45.9102 110.453 52.5214 109.778 54.1586C113.946 58.7106 116.468 64.509 116.468 71.6056C116.468 96.5712 101.262 102.068 86.788 103.677C89.1194 105.695 91.1969 109.65 91.1969 115.715C91.1969 124.412 91.1215 131.412 91.1215 133.552C91.1215 135.282 92.2915 137.309 95.5863 136.671C121.399 128.066 140 103.71 140 75.0005C140 39.1011 110.898 10 75.0005 10ZM34.3448 102.595C34.2017 102.918 33.6936 103.014 33.2308 102.793C32.7593 102.581 32.4945 102.14 32.6474 101.816C32.7873 101.484 33.2964 101.391 33.7668 101.614C34.2393 101.826 34.5084 102.271 34.3448 102.595ZM37.5421 105.448C37.2321 105.735 36.6261 105.601 36.2149 105.147C35.7898 104.694 35.7101 104.088 36.0244 103.796C36.3441 103.509 36.9318 103.644 37.3581 104.097C37.7832 104.555 37.8661 105.157 37.5421 105.448ZM39.7356 109.098C39.3373 109.374 38.6861 109.115 38.2836 108.537C37.8853 107.959 37.8853 107.266 38.2922 106.988C38.6958 106.71 39.3373 106.96 39.7453 107.534C40.1425 108.121 40.1425 108.815 39.7356 109.098ZM43.4452 113.325C43.0889 113.718 42.3301 113.613 41.7747 113.077C41.2063 112.552 41.0481 111.809 41.4055 111.416C41.7661 111.022 42.5292 111.133 43.0889 111.664C43.653 112.187 43.8252 112.937 43.4452 113.325ZM48.2396 114.752C48.0824 115.261 47.3515 115.493 46.6153 115.277C45.8801 115.054 45.399 114.457 45.5475 113.943C45.7004 113.431 46.4345 113.189 47.1761 113.421C47.9102 113.643 48.3924 114.235 48.2396 114.752ZM53.6957 115.358C53.714 115.894 53.0897 116.338 52.3169 116.348C51.5397 116.365 50.9111 115.931 50.9025 115.404C50.9025 114.863 51.5128 114.422 52.29 114.409C53.0628 114.394 53.6957 114.825 53.6957 115.358ZM59.0558 115.152C59.1483 115.675 58.6112 116.212 57.8438 116.356C57.0892 116.493 56.3907 116.17 56.2949 115.652C56.2012 115.116 56.748 114.579 57.5015 114.44C58.27 114.306 58.9578 114.621 59.0558 115.152Z" fill="#14171A"/>
+              </svg>
               </a>
               <a
                 href="https://www.instagram.com/luizackjs/"
                 rel="noopener"
                 target="_blank"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M11.999,7.377c-2.554,0-4.623,2.07-4.623,4.623c0,2.554,2.069,4.624,4.623,4.624c2.552,0,4.623-2.07,4.623-4.624	C16.622,9.447,14.551,7.377,11.999,7.377L11.999,7.377z M11.999,15.004c-1.659,0-3.004-1.345-3.004-3.003	c0-1.659,1.345-3.003,3.004-3.003s3.002,1.344,3.002,3.003C15.001,13.659,13.658,15.004,11.999,15.004L11.999,15.004z"
-                  />
-                  <circle cx="16.806" cy="7.207" r="1.078" />
-                  <path
-                    d="M20.533,6.111c-0.469-1.209-1.424-2.165-2.633-2.632c-0.699-0.263-1.438-0.404-2.186-0.42	c-0.963-0.042-1.268-0.054-3.71-0.054s-2.755,0-3.71,0.054C7.548,3.074,6.809,3.215,6.11,3.479C4.9,3.946,3.945,4.902,3.477,6.111	c-0.263,0.7-0.404,1.438-0.419,2.186c-0.043,0.962-0.056,1.267-0.056,3.71c0,2.442,0,2.753,0.056,3.71	c0.015,0.748,0.156,1.486,0.419,2.187c0.469,1.208,1.424,2.164,2.634,2.632c0.696,0.272,1.435,0.426,2.185,0.45	c0.963,0.042,1.268,0.055,3.71,0.055s2.755,0,3.71-0.055c0.747-0.015,1.486-0.157,2.186-0.419c1.209-0.469,2.164-1.424,2.633-2.633	c0.263-0.7,0.404-1.438,0.419-2.186c0.043-0.962,0.056-1.267,0.056-3.71s0-2.753-0.056-3.71C20.941,7.57,20.801,6.819,20.533,6.111z M19.315,15.643c-0.007,0.576-0.111,1.147-0.311,1.688c-0.305,0.787-0.926,1.409-1.712,1.711c-0.535,0.199-1.099,0.303-1.67,0.311	c-0.95,0.044-1.218,0.055-3.654,0.055c-2.438,0-2.687,0-3.655-0.055c-0.569-0.007-1.135-0.112-1.669-0.311	c-0.789-0.301-1.414-0.923-1.719-1.711c-0.196-0.534-0.302-1.099-0.311-1.669c-0.043-0.95-0.053-1.218-0.053-3.654	c0-2.437,0-2.686,0.053-3.655c0.007-0.576,0.111-1.146,0.311-1.687c0.305-0.789,0.93-1.41,1.719-1.712	c0.534-0.198,1.1-0.303,1.669-0.311c0.951-0.043,1.218-0.055,3.655-0.055c2.437,0,2.687,0,3.654,0.055	c0.571,0.007,1.135,0.112,1.67,0.311c0.786,0.303,1.407,0.925,1.712,1.712c0.196,0.534,0.302,1.099,0.311,1.669	c0.043,0.951,0.054,1.218,0.054,3.655c0,2.436,0,2.698-0.043,3.654H19.315z"
-                  />
+                <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="10" y="10" width="130" height="130" rx="65" fill="url(#paint0_radial_1142_76)"/>
+                <rect x="10" y="10" width="130" height="130" rx="65" fill="url(#paint1_radial_1142_76)"/>
+                <circle cx="73.7756" cy="76.0408" r="16.8163" stroke="white" stroke-width="8"/>
+                <circle cx="99.8979" cy="49.102" r="5.30612" fill="white"/>
+                <rect x="38.5" y="37.5" width="73" height="74.6327" rx="15.5" stroke="white" stroke-width="7"/>
+                <defs>
+                <radialGradient id="paint0_radial_1142_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(119.85 157.55) rotate(-105.945) scale(170.355 253.383)">
+                <stop offset="0.197635" stop-color="#F50B5E"/>
+                <stop offset="0.52034" stop-color="#DF0897"/>
+                <stop offset="0.768785" stop-color="#962FBF"/>
+                <stop offset="0.933441" stop-color="#4F5BD5"/>
+                </radialGradient>
+                <radialGradient id="paint1_radial_1142_76" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(53.55 140) rotate(-54.9721) scale(84.9339 92.9014)">
+                <stop offset="0.09375" stop-color="#FEDA75"/>
+                <stop offset="0.475046" stop-color="#FA7E1E"/>
+                <stop offset="1" stop-color="#FA7E1E" stop-opacity="0"/>
+                </radialGradient>
+                </defs>
                 </svg>
+
               </a>
               <a
                 href="https://twitter.com/LuisAdrianNuez?t=LGtN8Y_iq9YpiaTIVvOgBQ&s=09"
                 rel="noopener"
                 target="_blank"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    d="M19.633,7.997c0.013,0.175,0.013,0.349,0.013,0.523c0,5.325-4.053,11.461-11.46,11.461c-2.282,0-4.402-0.661-6.186-1.809	c0.324,0.037,0.636,0.05,0.973,0.05c1.883,0,3.616-0.636,5.001-1.721c-1.771-0.037-3.255-1.197-3.767-2.793	c0.249,0.037,0.499,0.062,0.761,0.062c0.361,0,0.724-0.05,1.061-0.137c-1.847-0.374-3.23-1.995-3.23-3.953v-0.05	c0.537,0.299,1.16,0.486,1.82,0.511C3.534,9.419,2.823,8.184,2.823,6.787c0-0.748,0.199-1.434,0.548-2.032	c1.983,2.443,4.964,4.04,8.306,4.215c-0.062-0.3-0.1-0.611-0.1-0.923c0-2.22,1.796-4.028,4.028-4.028	c1.16,0,2.207,0.486,2.943,1.272c0.91-0.175,1.782-0.512,2.556-0.973c-0.299,0.935-0.936,1.721-1.771,2.22	c0.811-0.088,1.597-0.312,2.319-0.624C21.104,6.712,20.419,7.423,19.633,7.997z"
-                  />
+                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg width="800px" height="800px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="20" fill="#1DA1F2"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M36 16.3086C35.1177 16.7006 34.1681 16.9646 33.1722 17.0838C34.1889 16.4742 34.9697 15.5095 35.3368 14.36C34.3865 14.9247 33.3314 15.3335 32.2107 15.5551C31.3123 14.5984 30.0316 14 28.6165 14C25.8975 14 23.6928 16.2047 23.6928 18.9237C23.6928 19.3092 23.7368 19.6852 23.8208 20.046C19.7283 19.8412 16.1005 17.8805 13.6719 14.9015C13.2479 15.6287 13.0055 16.4742 13.0055 17.3766C13.0055 19.0845 13.8735 20.5916 15.1958 21.4747C14.3878 21.4491 13.6295 21.2275 12.9647 20.8587V20.9203C12.9647 23.3066 14.663 25.296 16.9141 25.7496C16.5013 25.8616 16.0661 25.9224 15.6174 25.9224C15.2998 25.9224 14.991 25.8912 14.6902 25.8336C15.3166 27.7895 17.1357 29.2134 19.2899 29.2534C17.6052 30.5733 15.4822 31.3612 13.1751 31.3612C12.7767 31.3612 12.3848 31.338 12 31.2916C14.1791 32.6884 16.7669 33.5043 19.5475 33.5043C28.6037 33.5043 33.5562 26.0016 33.5562 19.4956C33.5562 19.282 33.5522 19.0693 33.5418 18.8589C34.5049 18.1629 35.34 17.2958 36 16.3086Z" fill="white"/>
                 </svg>
               </a>
               <a
@@ -718,17 +685,19 @@
                 rel="noopener"
                 target="_blank"
               >
-                <?xml version="1.0" standalone="no"?>
-                <svg
-                  width="1024px"
-                  height="1024px"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon"
-                >
-                  <path
-                    d="M880 112H144c-17.7 0-32 14.3-32 32v736c0 17.7 14.3 32 32 32h736c17.7 0 32-14.3 32-32V144c0-17.7-14.3-32-32-32zm-92.4 233.5h-63.9c-50.1 0-59.8 23.8-59.8 58.8v77.1h119.6l-15.6 120.7h-104V912H539.2V602.2H434.9V481.4h104.3v-89c0-103.3 63.1-159.6 155.3-159.6 44.2 0 82.1 3.3 93.2 4.8v107.9z"
-                  />
+               <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <svg width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none"><path fill="#1877F2" d="M15 8a7 7 0 00-7-7 7 7 0 00-1.094 13.915v-4.892H5.13V8h1.777V6.458c0-1.754 1.045-2.724 2.644-2.724.766 0 1.567.137 1.567.137v1.723h-.883c-.87 0-1.14.54-1.14 1.093V8h1.941l-.31 2.023H9.094v4.892A7.001 7.001 0 0015 8z"/><path fill="#ffffff" d="M10.725 10.023L11.035 8H9.094V6.687c0-.553.27-1.093 1.14-1.093h.883V3.87s-.801-.137-1.567-.137c-1.6 0-2.644.97-2.644 2.724V8H5.13v2.023h1.777v4.892a7.037 7.037 0 002.188 0v-4.892h1.63z"/></svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/luis-adrian-nu%C3%B1ez-jaramillo-b31a0a1a5/"
+                rel="noopener"
+                target="_blank"
+              >
+                <svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M75 140C110.899 140 140 110.899 140 75C140 39.1015 110.899 10 75 10C39.1015 10 10 39.1015 10 75C10 110.899 39.1015 140 75 140Z" fill="#0A66C2"/>
+                <path d="M55.6589 109.879H41.1504V63.202H55.6589V109.879Z" fill="white"/>
+                <path d="M109.994 109.879H95.5006V87.1815C95.5006 81.769 95.404 74.8015 87.9625 74.8015C80.4139 74.8015 79.2589 80.6986 79.2589 86.7875V109.878H64.7656V63.202H78.6792V69.5807H78.874C81.711 64.7298 86.9862 61.8325 92.6019 62.041C107.292 62.041 110 71.7034 110 84.2737L109.994 109.879Z" fill="white"/>
+                <path d="M48.4122 56.8217C43.7671 56.8226 40.0008 53.0576 40 48.4124C39.9992 43.7672 43.7641 40.0008 48.4092 40C53.0543 39.9992 56.8205 43.7642 56.8214 48.4094C56.8218 50.6401 55.936 52.7796 54.359 54.3572C52.782 55.9348 50.6429 56.8213 48.4122 56.8217Z" fill="white"/>
                 </svg>
               </a>
             </small>
@@ -743,7 +712,7 @@
             >
               <path
                 d="M31.375 7.9375C29.9375 9.0625 28.125 10.4375 21.75 15.0625C20.5 16 18.1875 18.0625 16 18.0625C13.75 18.0625 11.5 16 10.1875 15.0625C3.8125 10.4375 2 9.0625 0.5625 7.9375C0.3125 7.75 0 7.9375 0 8.25V21C0 22.6875 1.3125 24 3 24H29C30.625 24 32 22.6875 32 21V8.25C32 7.9375 31.625 7.75 31.375 7.9375ZM16 16C17.4375 16.0625 19.5 14.1875 20.5625 13.4375C28.875 7.4375 29.5 6.875 31.375 5.375C31.75 5.125 32 4.6875 32 4.1875V3C32 1.375 30.625 0 29 0H3C1.3125 0 0 1.375 0 3V4.1875C0 4.6875 0.1875 5.125 0.5625 5.375C2.4375 6.875 3.0625 7.4375 11.375 13.4375C12.4375 14.1875 14.5 16.0625 16 16Z"
-                fill="#D90062"
+                fill="#d66800"
               />
             </svg>
 
@@ -755,7 +724,8 @@
             >
           </aside>
         </article>
-        <form class="contact-form box-shadow">
+        
+        <form class="contact-form box-shadow" >
           <input
             type="text"
             name="name"
@@ -784,6 +754,7 @@
           </div>
           <input class="btn" type="submit" value="ENVIAR MENSAJE" />
         </form>
+        
         <article id="gracias" class="modal">
           <div class="modal-content">
             <article class="contact-form-response">
@@ -822,7 +793,8 @@
           >@LuizackJS</a
         >
         <br />
-        <i>"Haz realidad tu sueños".</i></small
+        <i>"No existen verdades absolutas..</i> <br>
+        <i>Solo diferententes maneras de realizar las cosas."</i></small
       >
     </footer>
     <script src="JS/script.js"></script>

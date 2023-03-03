@@ -1,8 +1,8 @@
 /* **********Custom properties ********** */
 :root {
-  --first-color: #d90062;
+  --first-color: #d66800;
   --first-alpha-color: rgba(217, 0, 98, 0.75);
-  --second-color: #14192d;
+  --second-color: #1f2937;
   --second-alpha-color: rgba(20, 25, 45, 0.75);
   --third-color: #501464;
   --third-alpha-color: rgba(80, 20, 100, 0.75);
@@ -17,9 +17,10 @@
   --error-color: #f00;
   --white-alpha-color: rgba(255, 255, 255, 0.5);
   --black-alpha-color: rgba(0, 0, 0, 0.5);
-  --font: "Helvetica", "Raleway", "sans-serif";
+  --font: "Helvetica", "Raleway";
   --max-width: 1200px;
   --header-height: 4rem;
+  --border-dark-color: #586474;
 }
 
 /* ********** Reset ********** */
@@ -40,7 +41,6 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-
   color: var(--text-color);
 }
 
@@ -84,81 +84,77 @@ img {
 p {
   line-height: 1.6;
 }
+
 /* ********** Components ********** */
 
-/* ********** Carrusel ********** */
-@keyframes carousel-slide {
-  0% {
-    transform: translateX(0%);
-  }
-  25% {
-    transform: translateX(-25%);
-  }
-  50% {
-    transform: translateX(-50%);
-  }
-  75% {
-    transform: translateX(-75%);
-  }
-}
-.carousel {
-  border-radius: 1rem;
-  margin: 2rem auto;
-  padding: 2rem 0;
-  max-width: 55%;
-  text-align: center;
-  overflow-x: hidden;
-  background-color: var(--carousel-bg-color);
-}
-.carousel .slides {
-  padding-left: 0;
-  /* 100% por cada slide */
-  width: 400%;
+/* ********** Button Dark ********** */
+.buttons-menu {
   display: flex;
-  list-style: none;
-  transition: transform 0.5s ease-in-out;
-  animation: carousel-slide 12s ease-in-out 3s;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 21%;
 }
-.carousel input {
-  display: none;
-}
-.carousel label {
-  border: medium solid var(--gray-dark-color);
+
+.btn-scroll-top {
+  z-index: 995;
+  position: fixed;
+  bottom: 4.5rem;
+  left: 1rem;
   border-radius: 50%;
-  margin: 0 0.25rem;
-  display: inline-block;
-  width: 0.75rem;
-  height: 0.75rem;
+  border: none;
   cursor: pointer;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--first-color);
+  animation: animation-btn-dark 0.3s ease-in;
 }
 
-.slide {
-  width: 100%;
+.btn-dark-mode {
+  z-index: 995;
+  position: fixed;
+  bottom: 4.5rem;
+  right: 1rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--first-color);
+  animation: animation-btn-dark 0.3s ease-in;
 }
 
-.text-gallery {
-  width: 100%;
-  text-align: center;
+@keyframes animation-btn-dark {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
-#slide-1:checked ~ .slides {
-  transform: translateX(0%);
-}
-#slide-2:checked ~ .slides {
-  transform: translateX(-25%);
-}
-#slide-3:checked ~ .slides {
-  transform: translateX(-50%);
-}
-#slide-4:checked ~ .slides {
-  transform: translateX(-75%);
+.dark-mode {
+  background-color: var(--second-color);
+  color: var(--white-color);
 }
 
-#slide-1:checked ~ .slides-nav label#dot-1,
-#slide-2:checked ~ .slides-nav label#dot-2,
-#slide-3:checked ~ .slides-nav label#dot-3,
-#slide-4:checked ~ .slides-nav label#dot-4 {
-  background-color: var(--gray-dark-color);
+.light-mode {
+  background-color: var(--white-color);
+  color: var(--black-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-dark-mode {
+    top: 4rem;
+  }
+  .btn-scroll-top {
+    bottom: 2rem;
+    left: 2rem;
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 /* ********** Formulario de contacto ********** */
@@ -199,13 +195,13 @@ p {
   opacity: 0.75;
 }
 .contact-form *::placeholder {
-  color: var(--gray-dark-color);
+  color: var(--black-color);
 }
 .contact-form-response {
+  border-radius: 1rem;
   padding: 1rem;
   width: 400px;
   text-align: center;
-  background-color: var(--white-color);
 }
 .contact-form-response svg {
   margin-top: 2rem;
@@ -249,6 +245,33 @@ p {
 .hero-image-content a {
   animation: animation-btn 1s ease-in-out;
 }
+.hero-image-content {
+  position: relative;
+}
+
+.indicador {
+  animation: animation-btn-scroll 1s ease-in-out;
+  color: var(--white-color);
+  padding: 1rem;
+  width: 500px;
+  position: absolute;
+  left: 50%;
+  margin-left: -250px;
+}
+
+.opacity {
+  opacity: 0;
+}
+
+@keyframes animation-btn-scroll {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 
 @keyframes animation-btn {
   0% {
@@ -289,11 +312,15 @@ p {
 
 /* ********** Menu ********** */
 .menu-btn {
-  outline: thin solid var(--first-color);
+  outline: medium solid var(--first-color);
   border: 0;
+  border-radius: 5rem;
   cursor: pointer;
-  background-color: var(--second-color);
-  animation: animation-btn-menu 1s ease-in-out;
+  background-color: transparent;
+}
+
+.menu-btn svg {
+  fill: var(--first-color);
 }
 
 @keyframes animation-btn-menu {
@@ -306,9 +333,6 @@ p {
   }
 }
 
-.menu-btn svg {
-  fill: var(--first-color);
-}
 .menu {
   position: fixed;
   left: 0;
@@ -320,8 +344,8 @@ p {
   transition: opacity 0.5s ease;
   pointer-events: none;
   /* align-items: center; */
-  background-color: var(--second-color);
   animation: animation-menu 1s ease-in-out;
+  background-color: var(--white-color);
 }
 
 @keyframes animation-menu {
@@ -337,13 +361,14 @@ p {
   opacity: 1;
   pointer-events: auto;
 }
+
 .menu a {
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  color: var(--first-color);
+  color: var(--gray-dark-color);
 }
 
 .menu a:hover {
@@ -369,9 +394,11 @@ p {
     padding-right: 0;
   }
   .menu a:hover {
+    color: var(--first-color);
     background-color: transparent;
   }
 }
+
 /* ********** Ventana Modal ********** */
 .modal {
   position: fixed;
@@ -464,9 +491,14 @@ progress::-webkit-progress-value {
   filter: grayscale(1);
 }
 
+.min-vh-100 {
+  height: 100vh;
+}
+
 .none {
   display: none;
 }
+
 .section {
   padding: 2rem 1rem;
 }
@@ -477,7 +509,6 @@ progress::-webkit-progress-value {
   padding: 0.5rem 1rem;
   width: 250px;
   text-align: center;
-  color: var(--second-color);
 }
 .text-first-color {
   color: var(--first-color);
@@ -540,6 +571,7 @@ progress::-webkit-progress-value {
   background-color: var(--second-color);
   text-align: center;
 }
+
 .header {
   position: fixed;
   left: 0;
@@ -548,7 +580,17 @@ progress::-webkit-progress-value {
   padding: 1rem;
   width: 100%;
   height: var(--header-height);
-  background-color: var(--second-color);
+  background-color: var(--white-color);
+  animation: animationMenu 0.5s ease-in;
+}
+
+@keyframes animationMenu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header > .container {
@@ -571,10 +613,10 @@ progress::-webkit-progress-value {
   }
 }
 .logo a {
-  color: var(--first-color);
   font-weight: bold;
   font-size: 2rem;
   text-decoration: none;
+  color: var(--black-color);
 }
 .logo > img {
   padding-top: 0.45rem;
@@ -582,6 +624,54 @@ progress::-webkit-progress-value {
   width: 2rem;
   height: 2rem;
 }
+
+.main {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-pictures {
+  position: fixed;
+  top: 0.5rem;
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  z-index: 995;
+  background-color: var(--white-color);
+  border-radius: 2rem;
+
+  animation: animation-modal 0.5s ease-in;
+}
+
+@keyframes animation-modal {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-pictures {
+    display: block;
+    position: static;
+    margin: auto;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 995;
+    background-color: var(--white-color);
+    width: 65%;
+    border-radius: 2rem;
+  }
+}
+
 .portfolio-card {
   position: relative;
   width: 100%;
@@ -600,7 +690,7 @@ progress::-webkit-progress-value {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  background-color: #0009;
+  background-color: var(--black-alpha-color);
   color: var(--white-color);
   opacity: 0;
   pointer-events: none;
@@ -626,18 +716,14 @@ progress::-webkit-progress-value {
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  background-color: var(--white-color);
+  /* background-color: var(--white-color);
+  color: var(--black-color); */
 }
 
-.portfolio-modal img {
-  width: 100%;
-  height: 80vw;
-}
 .portfolio-modal h3 {
   border-bottom: medium solid var(--first-color);
   margin: 1rem auto;
   padding: 0.5rem 0;
-  color: var(--title-color);
 }
 .portfolio-details {
   display: grid;
@@ -653,9 +739,7 @@ progress::-webkit-progress-value {
   padding: 1rem;
   text-align: center;
 }
-.service-card h3 {
-  color: var(--title-color);
-}
+
 .service-card svg {
   margin-bottom: 1.25rem;
   fill: var(--first-color);
@@ -669,16 +753,6 @@ progress::-webkit-progress-value {
 .social-media svg {
   width: 1.5rem;
   height: 1.5rem;
-}
-
-.title-gallery {
-  border-top: thin solid var(--first-color);
-  border-bottom: thin solid var(--first-color);
-  margin: 2rem auto;
-  padding: 0.5rem 1rem;
-  width: 250px;
-  text-align: center;
-  color: var(--white-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -781,8 +855,5 @@ progress::-webkit-progress-value {
   }
   .section {
     padding: 4rem 1rem;
-  }
-  .testimonials {
-    padding-top: 2rem;
   }
 }
